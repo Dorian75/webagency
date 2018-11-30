@@ -2,7 +2,7 @@
 
 
 * {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 html {
@@ -17,13 +17,14 @@ body {
 
 h1 {
   text-transform: uppercase;
-  font-size: 2.5em;
-  font-weight: bolder;
+  font-size: 3em;
+  font-weight: 700;
   letter-spacing: 0px;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 3.5em;
+  font-weight: 700;
   text-transform: uppercase;
   color: #272727;
   margin-bottom: 20px;
@@ -479,6 +480,12 @@ textarea {
 /*PARTIE RESPONSIVE*/
 
 
+@media only screen and (max-width: 1270px) {
+  .nos_services img {
+    max-height: 319px;
+  }
+}
+
 @media only screen and (max-width: 1150px){
   header,
   header nav ul,
@@ -592,6 +599,10 @@ textarea {
     height: 130px;
     flex-direction: column;
     position: static;
+  }
+
+  header img {
+    margin: auto;
   }
 
   .abs {
